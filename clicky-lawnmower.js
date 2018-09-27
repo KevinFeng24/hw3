@@ -7,7 +7,6 @@ var x = 0;
 var h = 10;
 
 function draw() {
-	if(mouseIsPressed)
   stroke(random(60, 70), 100, 90);
   line(x, height-10, x + random(-10, 10), height-10-random(h));
   
@@ -18,11 +17,11 @@ function draw() {
     h = h + 3;
   }
   
-  if (random() > 0.999) {
+  if(mouseIsPressed)
+	{
     noStroke();
     fill(255);
     rect(-1, -1, width+2, height-15);
-    h = 10;
   }
   
   noStroke();
