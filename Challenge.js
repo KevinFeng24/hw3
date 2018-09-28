@@ -19,6 +19,9 @@ function draw() {
     x = random(10);
     h = h + 3;
   }
+	if(x1>width){
+	x1=0
+	}
   
   if(mouseIsPressed) {
     noStroke();
@@ -26,6 +29,7 @@ function draw() {
     rect(x1,-1,2, height-15);
     h = 10;
 		x1=x1+changinx1
+	
   }
 
   
